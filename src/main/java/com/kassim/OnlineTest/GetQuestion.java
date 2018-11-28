@@ -1,6 +1,8 @@
+package com.kassim.OnlineTest;
+
 import java.util.ArrayList;
 
-public class getQuestion {
+public class GetQuestion {
 
     private static String[] array;
 

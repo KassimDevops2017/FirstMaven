@@ -1,10 +1,7 @@
-/*Online Java Paper Test*/
+package com.kassim.OnlineTest;/*Online Java Paper Test*/
 
-import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-
-
 
 class OnlineTest extends JFrame implements ActionListener
 {
@@ -100,27 +97,27 @@ class OnlineTest extends JFrame implements ActionListener
 	}
 	public void set()
 	{
-		getQuestion.setArray();
+		GetQuestion.setArray();
 		jb[4].setSelected(true);
 		if(current==0)
 		{
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[0].setText("int");jb[1].setText("Float");jb[2].setText("boolean");jb[3].setText("char");
 		}
 		if(current==1)
 		{
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[0].setText("Swing");jb[1].setText("Applet");jb[2].setText("Object");jb[3].setText("ActionEvent");
 		}
 		if(current==2)
 		{
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[0].setText("wait()");jb[1].setText("start()");jb[2].setText("stop()");jb[3].setText("run()");
 		}
 
 		if(current==3)
 		{
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[0].setText("Thread returns to the ready state");
 			jb[1].setText("Thread returns to waiting state");
 			jb[2].setText("Thread starts running");
@@ -128,21 +125,21 @@ class OnlineTest extends JFrame implements ActionListener
 		}
 		if(current==4)
 		{
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[0].setText("True");jb[1].setText("False");
 			jb[2].hide();
 			jb[3].hide();
 		}
 		if(current==5)
 		{
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[2].show();
 			jb[3].show();
 			jb[0].setText("class");jb[1].setText("int");jb[2].setText("get");jb[3].setText("if");
 		}
 		if(current==6)
 		{
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[0].setText("Undefined");
 			jb[1].setText("0");
 			jb[2].setText("Null");
@@ -150,7 +147,7 @@ class OnlineTest extends JFrame implements ActionListener
 		}
 		if(current==7)
 		{
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[0].setText("Instance variables are static variables within a class but outside any method.");
 			jb[1].setText("Instance variables are variables defined inside methods, constructors or blocks");
 			jb[2].setText("Instance variables are variables within a class but outside any method");
@@ -158,7 +155,7 @@ class OnlineTest extends JFrame implements ActionListener
 		}
 		if(current==8)
 		{
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[0].setText("True");
 			jb[1].setText("False");
 			jb[2].hide();
@@ -166,7 +163,7 @@ class OnlineTest extends JFrame implements ActionListener
 		}
 		if(current==9)
 		{
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[2].show();
 			jb[3].show();
 			jb[0].setText("A - If a subclass uses a method that is already provided by its parent class, it is known as Method Overriding");
@@ -176,21 +173,21 @@ class OnlineTest extends JFrame implements ActionListener
 		}
 		if(current==10)
 		{
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[0].setText("True");
 			jb[1].setText("False");
 			jb[2].setText("do not know");
 			jb[3].setText("cannot access static func");
 		}
 		if (current == 11) {
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[0].setText("8 bit");
 			jb[1].setText("16 bit");
 			jb[2].setText(" 32 bit");
 			jb[3].setText("64 bit");
 		}
 		if (current == 12) {
-			l.setText(getQuestion.returnQuestion(current));
+			l.setText(GetQuestion.returnQuestion(current));
 			jb[0].setText("u0000");
 			jb[1].setText("0");
 			jb[2].setText("null");

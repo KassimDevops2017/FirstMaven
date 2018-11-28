@@ -1,3 +1,6 @@
+package com.kassim.OnlineTest;
+
+import com.kassim.OnlineTest.GetQuestion;
 import junit.framework.TestCase;
 import org.junit.jupiter.api.Assertions;
 
@@ -13,17 +16,17 @@ public class OnlineTestTest extends TestCase {
         System.out.println(test.check());
 
         test.current = 4;
-        test.jb[2].setSelected(true);
+        test.jb[1].setSelected(true);
         Assertions.assertTrue(test.check());
         System.out.println(test.check());
 
         test.current = 7;
-        test.jb[3].setSelected(true);
+        test.jb[2].setSelected(true);
         Assertions.assertTrue(test.check());
         System.out.println(test.check());
 
         test.current = 9;
-        test.jb[1].setSelected(true);
+        test.jb[3].setSelected(true);
         Assertions.assertFalse(test.check());
         System.out.println(test.check());
 
@@ -35,18 +38,18 @@ public class OnlineTestTest extends TestCase {
 
         test.current = 0;
         test.set();
-        Assertions.assertEquals(test.l.getText(), getQuestion.returnQuestion(test.current));
+        Assertions.assertEquals(test.l.getText(), GetQuestion.returnQuestion(test.current));
         test.current = 3;
         test.set();
-        Assertions.assertEquals(test.l.getText(), getQuestion.returnQuestion(3));
+        Assertions.assertEquals(test.l.getText(), GetQuestion.returnQuestion(3));
         test.current = 6;
         test.set();
-        Assertions.assertEquals(test.l.getText(), getQuestion.returnQuestion(test.current));
+        Assertions.assertEquals(test.l.getText(), GetQuestion.returnQuestion(test.current));
         test.current = 8;
         test.set();
 
         try {
-                Assertions.assertEquals(test.l.getText(), getQuestion.returnQuestion(9));
+                Assertions.assertEquals(test.l.getText(), GetQuestion.returnQuestion(9));
 
             } catch (AssertionError e) {
                 assertionError = e.toString();
